@@ -1,0 +1,23 @@
+hr
+div#demo4.row
+	div.span12
+		h1 Creating things like tabs is super easy
+		div.tabbable
+			ul.nav.nav-tabs
+				li.active
+					a(href="#1", data-toggle="tabSection") 1
+				li
+					a(href="#2", data-toggle="tabSection") 2
+				li
+					a(href="#3", data-toggle="tabSection") 3
+				li
+					a(href="#4", data-toggle="tabSection") 4				
+			div.tab-content
+				div#1.tab-pane.active
+					p I am in Section 1.
+				div#2.tab-pane
+					p I am in Section 2.
+				div#3.tab-pane
+					p I am in Section 3
+				div#4.tab-pane
+					p You get the picture
