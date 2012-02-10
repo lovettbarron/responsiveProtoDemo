@@ -1,2 +1,109 @@
-h1= title
-p Welcome to #{title}
+div.navbar.navbar-fixed-top
+	div.navbar-inner
+		div.container
+			div.nav-collapse
+					a.brand(href="#body") Fun fun Bootstrap demo
+					ul.nav.pull-right
+						li
+							a(href="#demo1") Demo1
+						li
+							a(href="#demo2") Demo2
+						li
+							a(href="#demo3") Demo3
+						li
+							a(href="#demo4") Demo4
+						li
+							a(href="#demo5") Demo5
+						li.dropdown
+							a.dropdown-toggle(href="#",data-toggle="dropdownDropdown") 
+								
+							ul.dropdown-menu
+								li
+									a(href="http://normative.com")Normative.com
+								li 
+									a(href="http://readywater.ca") Readywater.ca
+								li.divider
+								li
+									a Divided item
+
+					a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+						span.icon-bar
+						span.icon-bar
+						span.icon-bar
+	
+div.container
+	div.hero-unit
+		h1 You can create easy masthead placeholders
+
+		hr
+		div#demo1.row.show-grid
+			div.span4
+				h3 The grid system is
+				img(src="http://placehold.it/200x200&text=span4")
+			div.span4
+				h3 Twelve columns
+				img(src="http://placehold.it/200x200&text=span4")
+			div.span4
+				h3 of various lengths
+				img(src="http://placehold.it/200x200&text=span4")
+
+		hr
+		div#demo2.row
+			div.span8.offset4
+				You can offset these grids by a certain amount.
+		hr
+		div#demo3.row
+			div.span12 
+				h1 You can nest columns and sections easily.
+				
+				div.row.show-grid
+					div.span2
+						img(src="http://placehold.it/200x200&text=span2")
+					div.span2
+						img(src="http://placehold.it/200x200&text=span2")
+					div.span8
+						img(src="http://placehold.it/800x200&text=span8")
+
+		hr
+		div#demo4.row
+			div.span12
+				h1 Creating things like tabs is super easy
+				div.tabbable
+					ul.nav.nav-tabs
+						li.active
+							a(href="#1", data-toggle="tabSection") 1
+						li
+							a(href="#2", data-toggle="tabSection") 2
+						li
+							a(href="#3", data-toggle="tabSection") 3
+						li
+							a(href="#4", data-toggle="tabSection") 4				
+					div.tab-content
+						div#1.tab-pane.active
+							p I am in Section 1.
+						div#2.tab-pane
+							p I am in Section 2.
+						div#3.tab-pane
+							p I am in Section 3
+						div#4.tab-pane
+							p You get the picture
+		hr
+		div.demo5.row
+			div.span12
+				h1 Images are fairly flexible and scalable
+				img(src="http://placehold.it/1280x1280&text=This+is+actually+1280x1280+pixels")
+
+	script(src="http://code.jquery.com/jquery-1.7.min.js")
+	script(src="public/javascripts/bootstrap-transition.js")
+	script(src="public/javascripts/bootstrap-dropdown.js")
+	script(src="public/javascripts/bootstrap-tab.js")
+	script(src="public/javascripts/bootstrap-scrollspy.js")
+	script(src="public/javascripts/bootstrap-tooltip.js")
+	script(src="public/javascripts/bootstrap-collapse.js")
+	script(src="public/javascripts/bootstrap-typeahead.js")
+	script(src="public/javascripts/prettify.js")
+	script(src="init.js")
+	script
+		$(document).ready( function() {
+			$(".collapse").collapse();
+		});
